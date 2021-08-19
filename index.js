@@ -8,7 +8,7 @@ class EsQueries {
         this.docs_queried = 0;
         this.max = 100000;
         this.min = 50000;
-        this.cluster_http = 'URL_TO_ES_CLUSTER';
+        this.cluster_url = 'URL_TO_ES_CLUSTER';
 
         // list of text fields in the docs so the checker can skip them
         this.ignore_fields = [];
@@ -34,7 +34,7 @@ class EsQueries {
         const size = this._getSize();
 
         try {
-            const result = await this._makeHttpRequest(`http://${this.cluster_http}/${this.index}/_search?size=${size}`);
+            const result = await this._makeHttpRequest(`http://${this.cluster_url}/${this.index}/_search?size=${size}`);
             return result.hits.hits.map((doc) => doc._source);
         } catch (e) {
             console.log(e);
