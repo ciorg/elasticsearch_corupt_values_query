@@ -3,7 +3,6 @@ simple node script used to repeatedly query es
 
 before running:
   * ensure node (v14+) and yarn or npm are installed
-  * install yarn or npm
 
 to run:
 ```
