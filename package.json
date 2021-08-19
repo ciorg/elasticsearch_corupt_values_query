@@ -1,0 +1,12 @@
+{
+  "name": "elasticsearch_corupt_values_query",
+  "version": "1.0.0",
+  "description": "query es",
+  "main": "index.js",
+  "repository": "git@github.com:ciorg/elasticsearch_corupt_values_query.git",
+  "author": "Charlie Iorg <ciorg@terascope.io>",
+  "license": "The Unlicense",
+  "dependencies": {
+    "bunyan": "^1.8.15"
+  }
+}
